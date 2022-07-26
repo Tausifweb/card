@@ -7,97 +7,122 @@
     <title>column preview card component</title>
   </head>
   <style>
-    *{
-        box-sizing: border-box;
+    * {
+      box-sizing: border-box;
     }
-    section{
-        display: flex;
-        justify-content: space-around;
+    section {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      align-items: center;
     }
-    .box1{
-        background-color: #E28525;
-        width: 80%;
-        padding: 15px;
-        font-size: 20px;
-        justify-content: center;
+    .box {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
     }
-    .box1 button{
-        align-items: center;
-        width: 100px;
-        height: 40px;
-        border-radius: 30%;
-        border: none;
-        cursor: pointer;
+    .box img {
+      width: 50px;
     }
-    .box2{
-        background-color: #026872;
-        width: 80%;
-        padding: 15px;
-        font-size: 20px;
+    .box button {
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      cursor: pointer;
+      border: none;
+      background-color: white;
     }
-    .box2 button{
-        align-items: center;
-        width: 100px;
-        height: 40px;
-        border-radius: 30%;
-        border: none;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+    #card1 {
+      background-color: #e28525;
     }
-    .box3{
-        background-color: #00403F;
-        width: 80%;
-        padding: 15px;
-        font-size: 20px;
+    #card2 {
+      background-color: #026872;
     }
-    .box3 button{
-        align-items: center;
-        width: 100px;
-        height: 40px;
-        border-radius: 30%;
-        border: none;
-        cursor: pointer;
+    #card3 {
+      background-color: #00403f;
+    }
+    .btn {
+      align-items: center;
+    }
+    @media only screen and (max-width: 500px) {
+      section{
+        flex-direction: column;
+      }
     }
   </style>
   <body>
     <section>
-      <div class="box1">
+      <div class="box" id="card1">
         <img src="./icon-luxury.svg" alt="" srcset="" />
         <h1>SEDANS</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
-          assumenda? Atque possimus iusto quisquam, consequuntur minima suscipit
-          velit aliquam hic nulla repudiandae animi accusantium omnis enim
-          provident eius, expedita ut laudantium blanditiis unde eligendi quod
-          impedit voluptate. Distinctio quo minus pariatur esse quos, quaerat
-          maxime consequuntur sint inventore magnam saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a tempora
+          error ex adipisci aspernatur rem itaque, atque minus quo porro?
+          Quibusdam voluptatibus, repellat vel repudiandae, molestiae nam, quia
+          possimus impedit consequuntur necessitatibus suscipit ad. Laudantium
+          quidem cum impedit, ab quam nemo. Blanditiis vero, molestias
+          doloremque fugiat non ipsa voluptate culpa quia, voluptatem veritatis,
+          esse recusandae iste nam quos labore cupiditate aut nostrum eligendi
+          dicta consequatur enim porro sequi fugit ducimus. Suscipit quas
+          dignissimos doloremque laboriosam voluptatum aspernatur tenetur! Ipsam
+          debitis dolorum minima dignissimos corporis, accusantium
+          exercitationem ratione! Reprehenderit ex, dolor officia illo aut quasi
+          illum laudantium iure itaque dignissimos? Numquam, aut doloremque
+          voluptas consequuntur atque dicta incidunt laborum vero tempore magnam
+          quia illum cum. Ab molestias exercitationem repudiandae voluptate,
+          architecto enim nam, dignissimos omnis nulla, sunt itaque aliquam
+          ducimus nisi necessitatibus illum dolore non odio quos quam eum
+          dolorum ut ullam! Nesciunt sint aliquam ratione ut eius labore modi?
         </p>
-        <button>Learn More</button>
+        <div class="btn"><button>Learn More</button></div>
       </div>
-      <div class="box2">
-        <img src="./icon-sedans.svg" alt="" srcset="" />
+      <div class="box" id="card2">
+        <img src="./icon-suvs.svg" alt="" srcset="" />
         <h1>SUVS</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
-          assumenda? Atque possimus iusto quisquam, consequuntur minima suscipit
-          velit aliquam hic nulla repudiandae animi accusantium omnis enim
-          provident eius, expedita ut laudantium blanditiis unde eligendi quod
-          impedit voluptate. Distinctio quo minus pariatur esse quos, quaerat
-          maxime consequuntur sint inventore magnam saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a tempora
+          error ex adipisci aspernatur rem itaque, atque minus quo porro?
+          Quibusdam voluptatibus, repellat vel repudiandae, molestiae nam, quia
+          possimus impedit consequuntur necessitatibus suscipit ad. Laudantium
+          quidem cum impedit, ab quam nemo. Blanditiis vero, molestias
+          doloremque fugiat non ipsa voluptate culpa quia, voluptatem veritatis,
+          esse recusandae iste nam quos labore cupiditate aut nostrum eligendi
+          dicta consequatur enim porro sequi fugit ducimus. Suscipit quas
+          dignissimos doloremque laboriosam voluptatum aspernatur tenetur! Ipsam
+          debitis dolorum minima dignissimos corporis, accusantium
+          exercitationem ratione! Reprehenderit ex, dolor officia illo aut quasi
+          illum laudantium iure itaque dignissimos? Numquam, aut doloremque
+          voluptas consequuntur atque dicta incidunt laborum vero tempore magnam
+          quia illum cum. Ab molestias exercitationem repudiandae voluptate,
+          architecto enim nam, dignissimos omnis nulla, sunt itaque aliquam
+          ducimus nisi necessitatibus illum dolore non odio quos quam eum
+          dolorum ut ullam! Nesciunt sint aliquam ratione ut eius labore modi?
         </p>
         <button>Learn More</button>
       </div>
-      <div class="box3">
-        <img src="./icon-suvs.svg" alt="" srcset="" />
+      <div class="box" id="card3">
+        <img src="./icon-sedans.svg" alt="" srcset="" />
         <h1>LUXURY</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
-          assumenda? Atque possimus iusto quisquam, consequuntur minima suscipit
-          velit aliquam hic nulla repudiandae animi accusantium omnis enim
-          provident eius, expedita ut laudantium blanditiis unde eligendi quod
-          impedit voluptate. Distinctio quo minus pariatur esse quos, quaerat
-          maxime consequuntur sint inventore magnam saepe.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a tempora
+          error ex adipisci aspernatur rem itaque, atque minus quo porro?
+          Quibusdam voluptatibus, repellat vel repudiandae, molestiae nam, quia
+          possimus impedit consequuntur necessitatibus suscipit ad. Laudantium
+          quidem cum impedit, ab quam nemo. Blanditiis vero, molestias
+          doloremque fugiat non ipsa voluptate culpa quia, voluptatem veritatis,
+          esse recusandae iste nam quos labore cupiditate aut nostrum eligendi
+          dicta consequatur enim porro sequi fugit ducimus. Suscipit quas
+          dignissimos doloremque laboriosam voluptatum aspernatur tenetur! Ipsam
+          debitis dolorum minima dignissimos corporis, accusantium
+          exercitationem ratione! Reprehenderit ex, dolor officia illo aut quasi
+          illum laudantium iure itaque dignissimos? Numquam, aut doloremque
+          voluptas consequuntur atque dicta incidunt laborum vero tempore magnam
+          quia illum cum. Ab molestias exercitationem repudiandae voluptate,
+          architecto enim nam, dignissimos omnis nulla, sunt itaque aliquam
+          ducimus nisi necessitatibus illum dolore non odio quos quam eum
+          dolorum ut ullam! Nesciunt sint aliquam ratione ut eius labore modi?
         </p>
         <button>Learn More</button>
       </div>
